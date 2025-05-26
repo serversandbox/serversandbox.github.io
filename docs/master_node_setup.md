@@ -35,3 +35,23 @@ s0 = slot 0
 3. eth0 
 ethernet
 ```
+
+note asus router fixes the first 3 bits, server is @ 200.
+
+batteries are completely dead, so server needs to be moved otherwise the cat tends to disconnect the cable
+
+7. ssh keygen
+
+```
+# on the mac, also name your key otherwise you kena
+ssh-keygen -t ed25519 -C "macbook-to-mint-master"
+
+# note filename: <users>/.ssh/ansible_key
+
+ssh-copy-id <user@xx.xx.xx.200>
+```
+
+subsequent logins are just ssh <user@xx.xx.xx.200>, i can make an alias but i'd probably forget if i did
+
+8. little ansible playbook for k3s (i could just write the install script, but there's nothing like fooling around to learn)
+
