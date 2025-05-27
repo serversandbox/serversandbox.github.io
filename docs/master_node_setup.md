@@ -53,5 +53,29 @@ ssh-copy-id <user@xx.xx.xx.200>
 
 subsequent logins are just ssh <user@xx.xx.xx.200>, i can make an alias but i'd probably forget if i did
 
+you can always `sudo whoami` to check if account is root lol. linux mint comes with python3 installed by default on cinnamon
+
 8. little ansible playbook for k3s (i could just write the install script, but there's nothing like fooling around to learn)
 
+there's https://github.com/k3s-io/k3s-ansible for reference
+
+[key terms](https://docs.ansible.com/ansible/latest/getting_started/index.html): 
+* control node: where ansible is installed, where i run commands from. this is my mac.
+* inventory: describe the things you wanna manage so ansible can use them ig? 
+* managed node: in this case, where i want to put k3s
+
+set up inventory.ini similar to the tutorial, then 
+
+```
+ansible-playbook -i inventory.ini install-k3s.yaml -K
+BECOME password:
+
+PLAY [Install and configure k3s single node cluster] ***********************************
+
+TASK [Gathering Facts] *****************************************************************
+
+<snip>
+
+PLAY RECAP *****************************************************************************
+192.168.50.200             : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+```
