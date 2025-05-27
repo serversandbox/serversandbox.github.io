@@ -77,5 +77,5 @@ TASK [Gathering Facts] *********************************************************
 <snip>
 
 PLAY RECAP *****************************************************************************
-192.168.50.200             : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+192.168.50.100             : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
