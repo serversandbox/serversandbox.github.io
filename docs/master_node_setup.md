@@ -79,3 +79,32 @@ TASK [Gathering Facts] *********************************************************
 PLAY RECAP *****************************************************************************
 192.168.50.100             : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
+
+9. test if 6443 is accessible
+
+```
+macmint@macmint:~$ curl -k https://192.168.50.200:6443
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "Unauthorized",
+  "reason": "Unauthorized",
+  "code": 401
+```
+
+10. use kubectl's built in merge to uh, merge configs so you can kubectl from outside
+
+```
+# run this within the repo directory
+
+cp ~/.kube/config ~/.kube/config.backup
+
+KUBECONFIG=k3s-config.yaml kubectl config view --flatten > ~/.kube/config.new
+
+mv ~/.kube/config.new ~/.kube/config
+```
+
+it would be MUCH better if i'd renamed the k3s env to something else, instead of like "default", but another time
+
