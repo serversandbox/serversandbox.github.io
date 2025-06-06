@@ -97,6 +97,8 @@ macmint@macmint:~$ curl -k https://192.168.50.200:6443
 10. use kubectl's built in merge to uh, merge configs so you can kubectl from outside
 
 ```
+# check your external k3s config is pointing to its ip, this probably needs to be reworked eventually....
+
 # run this within the repo directory
 
 cp ~/.kube/config ~/.kube/config.backup
@@ -108,3 +110,16 @@ mv ~/.kube/config.new ~/.kube/config
 
 it would be MUCH better if i'd renamed the k3s env to something else, instead of like "default", but another time
 
+11. modify localhost etc/hosts file to point to pihole.local for dashboard >__>
+
+12. try to update local device's dns servers first
+
+```
+16:52:14 in ~ using ☁️ terraform using ☁️  default/
+➜ scutil --dns | grep nameserver
+  nameserver[0] : 192.168.50.200
+  nameserver[0] : 192.168.50.200
+
+```
+
+13. point router at dns server
