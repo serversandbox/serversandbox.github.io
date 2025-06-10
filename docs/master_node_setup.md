@@ -122,4 +122,4 @@ it would be MUCH better if i'd renamed the k3s env to something else, instead of
 
 ```
 
-13. write manifests to deploy stuff
+13. write manifests to deploy stuff - pihole vs adguard home

@@ -1,5 +1,7 @@
 # kurose and ross 8ed notes
 
+ACTUALLY JUST GO TO (JIM KUROSE'S YOUTUBE CHANNEL)[https://www.youtube.com/@JimKurose] FOR EVERYTHING
+
 **Note: this needs to be checked for accuracy as was LLM summarised**
 
 To try out using Wireshark to capture my own traffic on wifi/ethernet
