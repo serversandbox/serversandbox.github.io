@@ -2,6 +2,8 @@
 
 ACTUALLY JUST GO TO (JIM KUROSE'S YOUTUBE CHANNEL)[https://www.youtube.com/@JimKurose] FOR EVERYTHING
 
+Also (network+ studying tips)[https://www.reddit.com/r/CompTIA/comments/1dgxi47/a_detailed_guide_to_pass_the_network/]
+
 **Note: this needs to be checked for accuracy as was LLM summarised**
 
 To try out using Wireshark to capture my own traffic on wifi/ethernet
