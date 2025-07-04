@@ -1,8 +1,0 @@
-title: server sandbox
-description: homelab blog
-
-markdown: kramdown
-theme: minima
-
-minima:
-  skin: dark
