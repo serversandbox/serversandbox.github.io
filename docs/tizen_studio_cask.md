@@ -2,6 +2,8 @@
 
 building is more fun than revising for certs.
 
+skip to the PR: https://github.com/Homebrew/homebrew-cask/pull/219456
+
 ## 1 - search earlier PRs
 
 search - https://github.com/Homebrew/homebrew-cask/pulls
@@ -208,3 +210,7 @@ Password:
 # create cask - helps you generate the SHA
 brew create --cask https://download.tizen.org/sdk/Installer/tizen-studio_6.1/web-ide_Tizen_Studio_6.1_macos-64.dmg --set-name tizen-studio-test
 
+## 5 - actually install the extensions
+
+this is very painful and requires some manual trial and error
+BECAUSE DEPENDENCIES ARE NOT MANAGED CORRECTLY (e.g. emulator > emulator manager)
