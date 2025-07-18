@@ -209,6 +209,7 @@ Password:
 ```
 # create cask - helps you generate the SHA
 brew create --cask https://download.tizen.org/sdk/Installer/tizen-studio_6.1/web-ide_Tizen_Studio_6.1_macos-64.dmg --set-name tizen-studio-test
+```
 
 ## 5 - actually install the extensions
 
